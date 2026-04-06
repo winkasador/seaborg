@@ -1,0 +1,18 @@
+[package]
+name = "seaborg"
+version = "0.1.0"
+edition = "2024"
+default-run = "repl"
+
+[dependencies]
+prompted = "0.2.8"
+rand = "0.10.0"
+shakmaty = "0.30.0"
+
+[[bin]]
+name = "engine"
+path = "src/engine/main.rs"
+
+[[bin]]
+name = "repl"
+path = "src/repl/main.rs"
